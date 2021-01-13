@@ -1,0 +1,114 @@
+/* General Style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(120deg, #39444e, #fbc531);
+  min-height: 100vh;
+}
+/***************************/
+
+main {
+  margin-top: 12rem;
+}
+
+.add-items {
+  background-color: #ffffff54;
+  width: 30%;
+  padding-bottom: 15px;
+  margin: auto;
+  text-align: center;
+}
+
+.add-items input[type="text"] {
+  width: 40%;
+  padding: 10px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+}
+
+.add-items button {
+  position: relative;
+  top: 6px;
+  outline: 0;
+  border: none;
+  margin-top: 6px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #262727;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.show-items {
+  margin: auto;
+  width: 30%;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.show-items .list-head {
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.show-items .list-head button {
+  width: 90px;
+  height: 30px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #a83e3e;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.show-items .list-body {
+  padding-top: 10px;
+}
+
+/* style for new li */
+.liSty {
+  width: 95%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin: 6px 0;
+  color: #212222;
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+}
+
+.show-items .list-body .liSty input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 7px;
+  margin-right: 6px;
+}
+/* style after click on checkbox */
+.show-items .list-body .liSty input[type="checkbox"]:focus + label {
+  text-decoration: line-through;
+}
+/* warn Msg when the input is empty  */
+.show-items .warn {
+  display: none;
+  background-color: #a83e3e;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  width: 33%;
+  margin-left: 10px;
+  margin-top: 10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}

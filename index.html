@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list </title>
+<link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" > <!-- font -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+
+        <section class="add-items">
+            <form id="todo_form">
+                <label for="new_item" >Add new task</label >
+                <input id="new_item" type="text" autocomplete="off" > 
+                <button class="button" id="add-btn" title="add new item" type="submit">+</button>
+            </form>
+        </section>
+        
+        <section class="show-items">
+            <div class="list-head">
+                <h2> Todo List</h2>
+                <button class="button" id="clear-btn" title="clear all items" >clear</button>
+            </div>
+            <hr>
+             <!-- warn messge if input is empty -->
+             <p class="warn">Please add any task !</p>
+
+            <div class="list-body">
+                <ul class="results">
+
+                </ul>
+    
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
